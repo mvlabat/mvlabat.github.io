@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://mvlabat.github.io/sitemap.xml
