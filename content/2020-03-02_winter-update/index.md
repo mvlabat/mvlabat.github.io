@@ -1,5 +1,6 @@
 +++
 title="Grumpy Visitors first update. Winter progress"
+slug="2020-03-02-winter-update"
 date=2020-03-02
 category="Grumpy Visitors"
 +++
@@ -88,7 +89,7 @@ This, I think, is the largest one, and it's still not finished: [UI and MP enhan
 This one had several blockers on Amethyst side ([one of the PRs](https://github.com/amethyst/amethyst/pull/2155) is yet to be merged)
 and required a lot of refactoring of my UI menu system. But some visible progress has already been made: half-working modal windows with cool fade-in/fade-out background transitions!
 
-<video style="object-fit: cover" width="615" height="461" autoplay loop>
+<video style="object-fit: cover" width="615" height="461" autoplay muted loop>
   <source src="modals.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
