@@ -26,7 +26,7 @@ So the first thing I started working on in winter was painting my mage sprites. 
 As Grumpy Visitors is a multiplayer game, I thought it's important to make the players' characters distinguishable.
 So I decided to make several variants of the sprite set.. with a shader!
 
-<img src="paint-mage.jpg">
+<img src="paint-mage.jpg"/>
 
 And the shader turned out pretty clean and simple.
 ```glsl
@@ -69,7 +69,7 @@ The code won't contain the full history of iterations though, but luckily I shot
 
 And the final result with higher resolution:
 
-<img src="missiles.jpg">
+<img src="missiles.jpg"/>
 
 ## New animations
 
@@ -82,7 +82,7 @@ This also required refactoring some of my animation systems, which I was procras
 Now the game features tired beetles:
 
 <p align="center">
-<img src="tired-beetle.jpg">
+<img src="tired-beetle.jpg"/>
 <i style="display: block;">(and I'm also too tired to make a proper gif, sry)</i>
 </p>
 
