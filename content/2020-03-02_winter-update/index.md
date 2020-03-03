@@ -20,11 +20,12 @@ It'll be insteresting to see how those'll change in the next updates.
 ## Painting mage sprites
 
 So the first thing I started working on in winter was painting my mage sprites. My original sprites render a mage in a white robe.
-As Grumpy Visitors is a multiplayer game, I thought it's important to make players' characters distinguishable. So I decided to make several variants of the sprite set.. with a shader!
+As Grumpy Visitors is a multiplayer game, I thought it's important to make the players' characters distinguishable.
+So I decided to make several variants of the sprite set.. with a shader!
 
 <img src="paint-mage.jpg">
 
-And the shader turned out to be not very ugly.
+And the shader turned out pretty clean and simple.
 ```glsl
 void main() {
     vec3 brightest_white = vec3(0.76);
@@ -55,7 +56,7 @@ So I wrote a [very basic particle system](https://github.com/amethyst/grumpy_vis
 then [made it a bit more complex](https://github.com/amethyst/grumpy_visitors/commit/a292da3e44d6f328d40135e2068bc78b1217dc0c)
 and finally implemented a new `RenderGroup` and [drew a missile](https://github.com/amethyst/grumpy_visitors/commit/0d0f1929c468b1762b15a19706bcaffd16ff6030).
 
-The code won't contain the full history of iterations though, luckily I shot some of them on a screen.. capture.. thing.
+The code won't contain the full history of iterations though, but luckily I shot some of them on a screen.. capture.. thing.
 
 **Beware!! I'm an evil man who doesn't stop the radio before recording.**
 
@@ -71,7 +72,7 @@ And the final result with higher resolution:
 
 Ok, this is almost the end.. That's more of a promise to myself.
 
-Several commits before you could observe that when several missiles landed on a beetle, a beetle disappeared.
+Several commits before one could observe that when several missiles landed on a beetle, a beetle just disappeared.
 That wasn't very nice looking.. So I decided to take the animations from my dusty sprites folder and finally add them to the game.
 This also required refactoring some of my animation systems, which I was procrastinating to do before, so it was a good call for two reasons.
 
@@ -89,7 +90,7 @@ This, I think, is the largest one, and it's still not finished: [UI and MP enhan
 This one had several blockers on Amethyst side ([one of the PRs](https://github.com/amethyst/amethyst/pull/2155) is yet to be merged)
 and required a lot of refactoring of my UI menu system. But some visible progress has already been made: half-working modal windows with cool fade-in/fade-out background transitions!
 
-<video style="object-fit: cover" width="615" height="461" autoplay muted loop>
+<video width="615" height="461" autoplay muted loop>
   <source src="modals.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
@@ -105,6 +106,4 @@ Thanks for reading! If you've got this far, you might as well be interested in t
 
 - [github.com/amethyst/grumpy_visitors](https://github.com/amethyst/grumpy_visitors)
 - [#good-first-issue](https://github.com/amethyst/grumpy_visitors/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
-- https://discord.gg/amethyst in #showcase-game
-
-(make the word counter sinister or grumpy even as well)
+- [discord.gg/amethyst](https://discord.gg/amethyst) in #showcase-game
