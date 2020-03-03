@@ -11,9 +11,12 @@ But first of all, I'd like to show off some numbers.
 
 Commits made: 39<BR>
 Pull requests merged: 5<BR>
-Code changes: <span style="color: #28a745">5,774++</span>  <span style="color: #cb2431">4,600--</span><!-- more --><BR>
-Issues submitted to Amethyst: 2 (1 solved)<BR>
-Pull requests sent to Amethyst: 2 (1 merged)
+Code changes: <span style="color: #28a745">5,774++</span>  <span style="color: #cb2431">4,600--</span>
+<!-- more -->
+
+**Contributions to Amethyst**<BR>
+Issues submitted: 2 (1 solved)<BR>
+Pull requests sent: 2 (1 merged)
 
 It'll be insteresting to see how those'll change in the next updates.
 
@@ -99,8 +102,8 @@ and required a lot of refactoring of my UI menu system. But some visible progres
 
 Thanks for reading! If you've got this far, you might as well be interested in these:
 
-- reddit discussion (todo)
-- twitter discussion (todo)
+- [reddit discussion](https://www.reddit.com/r/rust_gamedev/comments/fcvwsr/grumpy_visitors_first_update_winter_progress/)
+- [twitter discussion](https://twitter.com/mvlabat/status/1234858329526108165)
 
 <hr/>
 
