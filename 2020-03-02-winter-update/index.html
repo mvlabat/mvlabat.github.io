@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <!-- SEO -->
+        
+        <title> Grumpy Visitors first update. Winter progress | Vladyslav Batyrenko </title>
+        
+
+        <!-- Enable responsiveness on mobile devices-->
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1" >
+
+        <!--  css -->
+        <link rel="stylesheet"  href="https:&#x2F;&#x2F;mvlabat.github.io/ergo.css" >
+
+        <!-- fonts -->
+        <!-- preload  -->
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,500i,600,700,800,900|Raleway" as="style">
+        <link rel="preload"  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" as="style" >
+        <!-- load -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,500i,600,700,800,900|Raleway">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      
+    </head>
+
+    <body>
+      
+        
+<input type="checkbox" id="openSidebarMenu" class="openSidebarMenu">
+<label class="menu cross menu--1" for="openSidebarMenu">
+    <svg viewBox="0 0 75 75" xmlns="https://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="30" />
+        <path class="line--1" d="M0 40h62c13 0 6 28-4 18L35 35" />
+        <path class="line--2" d="M0 50h70" />
+        <path class="line--3" d="M0 60h62c13 0 6-28-4-18L35 65" />
+    </svg>
+</label>
+
+<div id="sidebarMenu">
+    <div class="menu_wrapper">
+        <ul class="sidebarMenuInner">
+            <li>
+                <a href="https:&#x2F;&#x2F;mvlabat.github.io" >Vladyslav Batyrenko</a>
+                <div class="menu_div" ></div>
+            </li>
+            
+            <li><a href="https://mvlabat.github.io" target="_blank">mvlabat.github.io</a></li>
+            
+            
+            <li><a href="https://github.com/mvlabat" target="_blank" >mvlabat</a><i class="fab fa-github" ></i></li>
+            
+            
+            <li><a href="https://twitter.com/mvlabat" target="_blank">@mvlabat</a><i class="fab fa-twitter" ></i></li>
+            
+            
+            
+            
+            <li><a href="https://www.linkedin.com/in/mvlabat" target="_blank">mvlabat</a><i class="fab fa-linkedin" ></i></li>
+            
+            
+            
+            
+            <li><a href="mailto:mvlabat@gmail.com?subject=hi" target="_blank">say hello</a><i class="fas fa-envelope" ></i></li>
+            
+            
+            <li><a href="https:&#x2F;&#x2F;mvlabat.github.io/rss.xml" target ="_blank">rss</a><i class="fas fa-rss" ></i></li>
+            
+        </ul>
+    </div>
+</div>
+
+      
+
+      
+<nav id="overlord" class="overlord" >
+  
+<figure class="mini_logo ">
+    <a href="https:&#x2F;&#x2F;mvlabat.github.io" style="background-image: url(https:&#x2F;&#x2F;mvlabat.github.io/img/avatar_115px.jpg)"></a>
+</figure>
+<h5>
+    <a href="https:&#x2F;&#x2F;mvlabat.github.io">Vladyslav Batyrenko</a>
+</h5>
+
+</nav>
+
+<section class="post_container">
+  <article>
+    
+      <h1 class="article_title"><a href="https:&#x2F;&#x2F;mvlabat.github.io&#x2F;2020-03-02-winter-update&#x2F;" id="article_link">Grumpy Visitors first update. Winter progress</a></h1>
+      
+<ul class="frontmatter frontmatter_page" id="frontmatter">
+    <li>
+        <time class="article_time"  datetime="2020-03-02">March 02, 2020</time>
+    </li>
+    <span class="dotDivider"></span>
+    <li> 667 words </li>
+    <span class="dotDivider" ></span>
+    <li> 4 min </li>
+</ul>
+
+      <p>Though this winter wasn't my most active season, some interesting updates worth highlighting were merged into master.
+It was mostly the graphics that drew my attention, so this update will also be rich with screenshots.</p>
+<p>But first of all, I'd like to show off some numbers.</p>
+<p>Commits made: 39<BR>
+Pull requests merged: 5<BR>
+Code changes: <span style="color: #28a745">5,774++</span>  <span style="color: #cb2431">4,600--</span><p id="zola-continue-reading"><a name="continue-reading"></a></p>
+<BR>
+Issues submitted to Amethyst: 2 (1 solved)<BR>
+Pull requests sent to Amethyst: 2 (1 merged)</p>
+<p>It'll be insteresting to see how those'll change in the next updates.</p>
+<h2 id="painting-mage-sprites">Painting mage sprites</h2>
+<p>So the first thing I started working on in winter was painting my mage sprites. My original sprites render a mage in a white robe.
+As Grumpy Visitors is a multiplayer game, I thought it's important to make players' characters distinguishable. So I decided to make several variants of the sprite set.. with a shader!</p>
+<img src="paint-mage.jpg">
+<p>And the shader turned out to be not very ugly.</p>
+<pre style="background-color:#fdf6e3;">
+<span style="color:#657b83;">void main() {
+    vec3 brightest_white = vec3(0.76);
+    vec3 darkest_white = vec3(0.57);                   // These two variables aren&#39;t
+    vec3 white_diff = brightest_white - darkest_white; // used, but nevermind.
+
+    vec4 color = texture(albedo, vertex.tex_uv);
+    if (color.a == 0.0) {
+        discard;
+    }
+    if (abs(color.r - color.g) &lt; 0.02 &amp;&amp; abs(color.g - color.b) &lt; 0.02) {
+        out_color = vec4(
+            vertex.paint_color.rgb - (brightest_white - color.rgb),
+            color.a
+        );
+    } else {
+        out_color = color;
+    }
+}
+</span></pre><h2 id="spell-particles">Spell particles</h2>
+<p>There's still an old screenshot on my github front page where you can see how the spell particle looked: <a href="https://github.com/amethyst/grumpy_visitors/blob/b0edb94c33d10b56b99df0b5bc88cce86fd8da97/header_screenshot.png">[the image]</a><BR>
+Yes, it's just a red dot! Unacceptable, right? Here I thought digging into shaders would be a nice idea again.</p>
+<p>So I wrote a <a href="https://github.com/amethyst/grumpy_visitors/commit/5e2602bae16179cd579926b1e6832348e063a77c">very basic particle system</a>,
+then <a href="https://github.com/amethyst/grumpy_visitors/commit/a292da3e44d6f328d40135e2068bc78b1217dc0c">made it a bit more complex</a>
+and finally implemented a new <code>RenderGroup</code> and <a href="https://github.com/amethyst/grumpy_visitors/commit/0d0f1929c468b1762b15a19706bcaffd16ff6030">drew a missile</a>.</p>
+<p>The code won't contain the full history of iterations though, luckily I shot some of them on a screen.. capture.. thing.</p>
+<p><strong>Beware!! I'm an evil man who doesn't stop the radio before recording.</strong></p>
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xttzNwBmQTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+<p>And the final result with higher resolution:</p>
+<img src="missiles.jpg">
+<h2 id="new-animations">New animations</h2>
+<p>Ok, this is almost the end.. That's more of a promise to myself.</p>
+<p>Several commits before you could observe that when several missiles landed on a beetle, a beetle disappeared.
+That wasn't very nice looking.. So I decided to take the animations from my dusty sprites folder and finally add them to the game.
+This also required refactoring some of my animation systems, which I was procrastinating to do before, so it was a good call for two reasons.</p>
+<p>Now the game features tired beetles:</p>
+<p align="center">
+<img src="tired-beetle.jpg">
+<i style="display: block;">(and I'm also too tired to make a proper gif, sry)</i>
+</p>
+<h2 id="polishing-ui">Polishing UI</h2>
+<p>This, I think, is the largest one, and it's still not finished: <a href="https://github.com/amethyst/grumpy_visitors/pull/36">UI and MP enhancements #36</a>.</p>
+<p>This one had several blockers on Amethyst side (<a href="https://github.com/amethyst/amethyst/pull/2155">one of the PRs</a> is yet to be merged)
+and required a lot of refactoring of my UI menu system. But some visible progress has already been made: half-working modal windows with cool fade-in/fade-out background transitions!</p>
+<video style="object-fit: cover" width="615" height="461" autoplay muted loop>
+  <source src="modals.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+<h2 id="links">Links</h2>
+<p>Thanks for reading! If you've got this far, you might as well be interested in these:</p>
+<ul>
+<li>reddit discussion (todo)</li>
+<li>twitter discussion (todo)</li>
+</ul>
+<hr/>
+<ul>
+<li><a href="https://github.com/amethyst/grumpy_visitors">github.com/amethyst/grumpy_visitors</a></li>
+<li><a href="https://github.com/amethyst/grumpy_visitors/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22">#good-first-issue</a></li>
+<li>https://discord.gg/amethyst in #showcase-game</li>
+</ul>
+<p>(make the word counter sinister or grumpy even as well)</p>
+
+      
+  </article>
+</section>
+
+       
+
+      <footer>
+        
+          
+<figure class="mini_logo ">
+    <a href="https:&#x2F;&#x2F;mvlabat.github.io" style="background-image: url(https:&#x2F;&#x2F;mvlabat.github.io/img/avatar_115px.jpg)"></a>
+</figure>
+<h5>
+    <a href="https:&#x2F;&#x2F;mvlabat.github.io">Vladyslav Batyrenko</a>
+</h5>
+
+          
+<ul class="social_list foot_list" >
+    
+    <li class="button extra_small font_faint"><a href="https://mvlabat.github.io" target="_blank">mvlabat.github.io</a></li>
+    
+    
+    <li class="button extra_small font_faint"><a href="https://github.com/mvlabat" target="_blank" >mvlabat</a><i class="fab fa-github" ></i></li>
+    
+    
+    <li class="button extra_small font_faint"><a href="https://twitter.com/mvlabat" target="_blank">@mvlabat</a><i class="fab fa-twitter" ></i></li>
+    
+    
+    
+    
+    <li class="button extra_small font_faint"><a href="https://www.linkedin.com/in/mvlabat" target="_blank">mvlabat</a><i class="fab fa-linkedin" ></i></li>
+    
+    
+    
+    
+    <li class="button extra_small font_faint"><a href="mailto:mvlabat@gmail.com?subject=hi" target="_blank">say hello</a><i class="fas fa-envelope" ></i></li>
+    
+    
+    <li class="button extra_small font_faint"><a href="https:&#x2F;&#x2F;mvlabat.github.io/rss.xml" target ="_blank">rss</a><i class="fas fa-rss" ></i></li>
+    
+</ul>
+
+        
+      </footer>
+    </body>
+</html>
