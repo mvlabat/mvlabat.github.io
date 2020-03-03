@@ -25,10 +25,10 @@ jobs:
     - run: ./zola build
     - name: Deploy
       if: github.ref == 'refs/heads/code'
-      uses: crazy-max/ghaction-github-pages@v1
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        build_dir: public
-        target_branch: master
-        keep_history: true
+        personal_token: ${{ secrets.GITHUB_PAT }}
+        publish_dir: ./public
+        publish_branch: master
       env:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
