@@ -1,0 +1,17 @@
+@import "../themes/ergo/sass/ergo.scss";
+
+@media only screen and (max-width: 615px) {
+  video, img, iframe {
+    max-width: 100%;
+  }
+
+  video {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 616px) {
+  video {
+    object-fit: cover;
+  }
+}
