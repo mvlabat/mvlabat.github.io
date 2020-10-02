@@ -3,6 +3,7 @@ base_url = "https://mvlabat.github.io"
 
 title = "Vladyslav Batyrenko"
 # a description; you can use markdown here if you like
+description=""
 # description="\"*I don't have a quote for you (like in the [Ergo theme](https://www.getzola.org/themes/ergo/)), but I'll just say here that it's my personal blog, and it should be mostly about my [Grumpy Visitors](https://github.com/amethyst/grumpy_visitors) game and programming*\" - mvlabat, aka Mr. Blyat (not widely really)"
 default_language = "en"
 
