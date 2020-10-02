@@ -3,7 +3,7 @@
     <channel>
         <title>Vladyslav Batyrenko</title>
         <link>https://mvlabat.github.io</link>
-        <description>&quot;*I don&#x27;t have a quote for you (like in the [Ergo theme](https:&#x2F;&#x2F;www.getzola.org&#x2F;themes&#x2F;ergo&#x2F;)), but I&#x27;ll just say here that it&#x27;s my personal blog, and it should be mostly about my [Grumpy Visitors](https:&#x2F;&#x2F;github.com&#x2F;amethyst&#x2F;grumpy_visitors) game and programming*&quot; - mvlabat, aka Mr. Blyat (not widely really)</description>
+        <description></description>
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://mvlabat.github.io/rss.xml" rel="self" type="application/rss+xml"/>
